@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+.outercontainer{
+    width: 100%;
+    position: relative;
+    // min-height: 100vh;
+    display: flex;
+    .ulcontainer{
+       // background-color: orange;
+        width: 80%;
+        max-width: 800px;
+        margin: 0 auto;
+        position: relative;
+        height: auto;
+
+        &:before{
+            position: absolute;
+            content: '';
+            width: 0.3rem;
+            background-color: rgb(63, 177, 205);
+            height: 100%;
+            top: 0%;
+            left: 50%;
+            transform: translateX(-50%);
+            // height: 100rem;
+            height: 100%;
+        }
+        ul{
+            list-style: none;
+            height: 100%;
+            li{
+                width: 50%;
+                position: relative;
+                margin-bottom: 2rem;
+                
+                // margin: 1rem;
+                
+                &::after{
+                    position: absolute;
+                    background-color: burlywood;
+                    content: '';
+                    height: 1rem;
+                    width: 1rem;
+                    border-radius: 50%;
+                    top: 0;
+                    
+
+                }
+                .itemcontent{
+                    margin: 1rem;
+                    padding: 1rem;
+                    border-radius: 5%;
+                    background-color: cadetblue;
+                    h3{
+
+                    }
+                    p{
+
+                    }
+
+                }
+
+                &:nth-child(odd){
+                    color: orangered;
+                    float: left;
+                    // clear: right;
+                    clear: both;
+                    
+                    &::after{
+                        right: -0.5rem;
+                        top: 0%;
+                    }
+                }
+                &:nth-child(even){
+                    color: orchid;
+                    float: left;
+                    clear: both;
+                    // clear: right;
+                    // float: right;
+                    // clear: left;
+                    &::after{
+                        left: -0.5rem;
+                        top: 0%;
+                    }
+                }
+            }
+        }
+    }
+}
