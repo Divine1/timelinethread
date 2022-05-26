@@ -70,8 +70,8 @@ body{
                 &:nth-child(odd){
                     color: orangered;
                     float: left;
-                    // clear: right;
-                    clear: both;
+                    clear: right;
+                    
                     
                     &::after{
                         right: -0.5rem;
@@ -82,9 +82,9 @@ body{
                     color: orchid;
                     float: left;
                     clear: both;
-                    // clear: right;
-                    // float: right;
-                    // clear: left;
+                    
+                    float: right;
+                    clear: left;
                     &::after{
                         left: -0.5rem;
                         top: 0%;

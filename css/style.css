@@ -49,14 +49,16 @@ body {
         .outercontainer .ulcontainer ul li:nth-child(odd) {
           color: orangered;
           float: left;
-          clear: both; }
+          clear: right; }
           .outercontainer .ulcontainer ul li:nth-child(odd)::after {
             right: -0.5rem;
             top: 0%; }
         .outercontainer .ulcontainer ul li:nth-child(even) {
           color: orchid;
           float: left;
-          clear: both; }
+          clear: both;
+          float: right;
+          clear: left; }
           .outercontainer .ulcontainer ul li:nth-child(even)::after {
             left: -0.5rem;
             top: 0%; }
